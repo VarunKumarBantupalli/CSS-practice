@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+    <style>
+        :root{
+            --primary-color: rgb(109, 154, 230);
+            --secondary-color:rgb(40, 6, 164);
+            --third-color:white;
+            --box-colors:lightblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top:0;
+
+        }
+        nav{
+            height: 83px;
+            background-color: var(--secondary-color);
+            color: var(--third-color);
+            
+            
+        }
+        body{
+            background-color: var(--primary-color);
+        }
+        ul li {
+            display: inline;
+            padding: 52px;
+            margin: 2px;
+            font-size: 1.5em;
+            font: bolder;
+        }
+        .container{
+            
+            background-color:var(--third-color);
+            margin: 12px 34px;
+            padding: 23px 23px;
+            text-align: center;
+        }
+        .box1{
+                height: 70vh;
+                background-color: var(--box-colors);
+                width: 45%;
+                display: inline-block;
+                margin: 10px;
+                border-radius: 20px;
+                border: 2px solid black;
+                
+        }
+        .box2{
+            height: 70vh;
+                background-color:var(--box-colors);
+                width: 45%;
+                display: inline-block;
+                margin: 10px;
+                border-radius: 20px;
+                border: 2px solid black;
+                
+        }
+        footer{
+            height: 100px;
+            background-color: grey;
+            border: 2px solid black;
+            text-align: center;
+            color: var(--third-color);
+        }
+        .textbox{
+            background-color: var(--box-colors);
+            height: 66px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>SUPPORT</li>
+                <li>TERMS AND CONDITIONS</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+                <div class="box1">
+
+                </div>
+                <div class="box2">
+
+                </div>
+                <div class="textbox">
+                    <p>welcome to Indralok!!!</p>
+                </div>
+        </div>
+
+    </main>
+    <footer>
+       <u style="color: black;"> <p>TERMS & CONDITIONS</p> </u>
+       
+        
+    </footer>
+</body>
+</html>

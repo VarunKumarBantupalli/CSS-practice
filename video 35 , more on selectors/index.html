@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on  CSS selectors</title>
+    <style>
+       /* .boxes:first-child{
+                background-color: aqua;
+        }*/
+        .class * {
+                color: rgb(12, 231, 48);
+                border: 2px solid black;
+        }
+        .class::before{
+                content: "this is very important";
+        }
+        .class::after{
+                 content: "this is also special";
+        }
+        ::selection{
+                color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="class">
+    <div class="boxes">hey   i am a box !!!</div>
+    <div class="boxes">hey   i am a box !!!</div>
+    <div class="boxes">hey   i am a box !!!</div>
+</div>
+</body>
+</html>

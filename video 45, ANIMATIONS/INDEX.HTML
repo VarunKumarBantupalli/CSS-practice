@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        .container {
+            height: 80vh;
+            width: 40vw;
+            background-color: aqua;
+        }
+
+        .box {
+            height: 100px;
+            width: 75px;
+            background-color: rgb(228, 12, 12);
+            animation: varunsanimations;
+            animation-duration: 1s;
+            animation-iteration-count:infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse; 
+        }
+        @keyframes varunsanimations{
+            from{
+                background-color: red;
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+                    box
+        </div>
+    </div>
+</body>
+
+</html>

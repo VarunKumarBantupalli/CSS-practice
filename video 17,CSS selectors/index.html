@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+       #red{
+        background-color: red;
+       }
+       #green{
+        background-color: green;
+       }
+       div > p {
+         background-color: pink;
+       }
+       div li{
+        background-color: lightgreen;
+       }
+       *{
+        margin : 0;
+        padding : 0;
+       }
+       a:link{
+        color: green;
+       }
+       a:visited{
+            color : magenta;
+       }
+       a:active{
+           background-color : blue;
+
+       }
+       a :hover{
+        background-color: black;
+       }
+       div :first-child{
+        background-color: lime;
+       }
+       
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>i am the first child</p>
+        <p>i am the second child</p>
+    </div>
+    <div id="red">
+         i am good boy .
+         <p>(this is the  direct child of the div)Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sapiente quas dolor voluptates adipisci inventore quidem ratione sit quibusdam praesentium.</p>
+         <p>
+            <li>this is the desendent of the div (but not the chid)</li>
+         </p>
+         </div>
+         <div id="green">
+            i am bad boy .
+         </div>
+         <h2>pseudo  selectors :</h2>
+         <a href="www.https://google.com">go to google</a>
+         <br>
+         <a href="www.https://merecedes.com">go to merecedes Benz</a>
+
+</body>
+</html>
